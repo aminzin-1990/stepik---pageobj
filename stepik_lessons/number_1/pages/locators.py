@@ -12,9 +12,6 @@ class BasketPageLocators:
     BASKET_LINK = (By.CSS_SELECTOR, ".basket-items")
     BASKET_EMPTY_MESSAGE =(By.CSS_SELECTOR, "#content_inner")
 
-# class MainPageLocators:
-#     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
-
 
 class LoginPageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "[name='login_submit']")

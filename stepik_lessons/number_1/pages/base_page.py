@@ -20,8 +20,6 @@ class BasePage:
     def go_to_login_page(self):
         login_link = self.browser.find_element(*BasePageLocators.LOGIN_LINK)
         login_link.click()
-        # alert = self.browser.switch_to.alert
-        # alert.accept()
 
     def is_disappeared(self, how, what, timeout=4):
         try:
@@ -68,11 +66,3 @@ class BasePage:
             alert.accept()
         except NoAlertPresentException:
             print("No second alert presented")
-
-
-
-
-
-
-
-

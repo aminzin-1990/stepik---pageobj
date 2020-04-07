@@ -10,8 +10,6 @@ class ProductPage(BasePage):
     def should_be_after_pay(self):
         self.should_be_name_match()
         self.should_be_price_match()
-        # self.should_not_be_success_message()
-        # self.should_disappeared_of_success_message()
 
     def should_be_name_match(self):
         assert self.browser.find_element(*ProductPageLocators.BOOK_NAME).text + ' has been added' in \
